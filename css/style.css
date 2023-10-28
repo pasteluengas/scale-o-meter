@@ -1,0 +1,167 @@
+body {
+    margin: 20px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #1d1d1d;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 450px;
+    background-color: #6A8AB6;
+}
+
+.neck {
+    background-image: url(../files/neck.png);
+    width: 80%;
+    background-size: 1050px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    display: flex;
+   align-items: center;
+}
+
+.menu img {
+    position: relative;
+    top: 20px;
+}
+
+.menu {
+    width: 20%;
+    background-color: #FF5733;
+    text-align: center;
+}
+
+.menu select {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu input[type="button"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu input[type="button"]:hover {
+    background-color: #bb63d1;
+    color: white;
+}
+
+.fret {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+.st1, .st2 , .st3, .st4, .st5, .st6 {
+    display: flex;
+    position: relative;
+    
+}
+
+.st1 {
+    bottom: 45px;
+    left: 55px;
+}
+
+.st2 {
+    bottom: 30px;
+    right:205px;
+}
+
+.st3 {
+    bottom: 15px;
+    right:465px;
+}
+
+.st5 {
+    top: 21px;
+    right:985px;
+}
+
+.st4 {
+    top: 4px;
+    right:726px;
+}
+
+.st6 {
+    top: 36px;
+    right:1245px;
+}
+#st1-1, #st2-1, #st3-1, #st4-1, #st5-1, #st6-1  {
+    position: relative;
+    left: 36px;
+}
+
+#st1-2, #st2-2, #st3-2, #st4-2, #st5-2, #st6-2  {
+    position: relative;
+    left: 100px;
+}
+
+#st1-3, #st2-3, #st3-3, #st4-3, #st5-3, #st6-3  {
+    position: relative;
+    left: 200px;
+}
+
+#st1-4, #st2-4, #st3-4, #st4-4, #st5-4, #st6-4  {
+    position: relative;
+    left: 278px;
+}
+
+#st1-5, #st2-5, #st3-5, #st4-5, #st5-5, #st6-5 {
+    position: relative;
+    left: 355px;
+}
+
+#st1-6, #st2-6, #st3-6, #st4-6, #st5-6, #st6-6  {
+    position: relative;
+    left: 420px;
+}
+
+#st1-7, #st2-7, #st3-7, #st4-7, #st5-7, #st6-7  {
+    position: relative;
+    left: 494px;
+}
+
+#st1-8, #st2-8, #st3-8, #st4-8, #st5-8, #st6-8 {
+    position: relative;
+    left: 550px;
+}
+
+#st1-9, #st2-9, #st3-9, #st4-9, #st5-9, #st6-9  {
+    position: relative;
+    left: 600px;
+}
+
+#st1-10, #st2-10, #st3-10, #st4-10, #st5-10, #st6-10  {
+    position: relative;
+    left: 650px;
+}
+
+#st1-11, #st2-11, #st3-11, #st4-11, #st5-11, #st6-11 {
+    position: relative;
+    left: 690px;
+}
+
+#st1-12, #st2-12, #st3-12, #st4-12, #st5-12, #st6-12  {
+    position: relative;
+    left: 720px;
+}
+
+.neck select {
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    height: 20px;
+}
