@@ -76,6 +76,8 @@ function selectScale() {
     if (actualScale == "all_notes") {
         for (let i = 1; i < 13; i++) {
             //document.getElementById("st1-" + i).style.backgroundColor = "rgba(0,0,0,0.5)";
+
+            
             document.getElementById("st1-" + i).style.backgroundColor = "green";
             document.getElementById("st2-" + i).style.backgroundColor = "green";
             document.getElementById("st3-" + i).style.backgroundColor = "green";
@@ -95,52 +97,14 @@ function selectScale() {
         }
     } else {
         for (let i = 1; i < 13; i++) {
-            if (scales[actualScale].includes(document.getElementById("st1-" + i).innerHTML)) {
-                document.getElementById("st1-" + i).style.backgroundColor = "green";
-                document.getElementById("st1-" + i).style.color = "white";
-            } else {
-                document.getElementById("st1-" + i).style.backgroundColor = "rgba(0,0,0,0)";
-                document.getElementById("st1-" + i).style.color = "rgba(0,0,0,0)";
-            }
-
-            if (scales[actualScale].includes(document.getElementById("st2-" + i).innerHTML)) {
-                document.getElementById("st2-" + i).style.backgroundColor = "green";
-                document.getElementById("st2-" + i).style.color = "white";
-            } else {
-                document.getElementById("st2-" + i).style.backgroundColor = "rgba(0,0,0,0)";
-                document.getElementById("st2-" + i).style.color = "rgba(0,0,0,0)";
-            }
-
-            if (scales[actualScale].includes(document.getElementById("st3-" + i).innerHTML)) {
-                document.getElementById("st3-" + i).style.backgroundColor = "green";
-                document.getElementById("st3-" + i).style.color = "white";
-            } else {
-                document.getElementById("st3-" + i).style.backgroundColor = "rgba(0,0,0,0)";
-                document.getElementById("st3-" + i).style.color = "rgba(0,0,0,0)";
-            }
-
-            if (scales[actualScale].includes(document.getElementById("st4-" + i).innerHTML)) {
-                document.getElementById("st4-" + i).style.backgroundColor = "green";
-                document.getElementById("st4-" + i).style.color = "white";
-            } else {
-                document.getElementById("st4-" + i).style.backgroundColor = "rgba(0,0,0,0)";
-                document.getElementById("st4-" + i).style.color = "rgba(0,0,0,0)";
-            }
-
-            if (scales[actualScale].includes(document.getElementById("st5-" + i).innerHTML)) {
-                document.getElementById("st5-" + i).style.backgroundColor = "green";
-                document.getElementById("st5-" + i).style.color = "white";
-            } else {
-                document.getElementById("st5-" + i).style.backgroundColor = "rgba(0,0,0,0)";
-                document.getElementById("st5-" + i).style.color = "rgba(0,0,0,0)";
-            }
-
-            if (scales[actualScale].includes(document.getElementById("st6-" + i).innerHTML)) {
-                document.getElementById("st6-" + i).style.backgroundColor = "green";
-                document.getElementById("st6-" + i).style.color = "white";
-            } else {
-                document.getElementById("st6-" + i).style.backgroundColor = "rgba(0,0,0,0)";
-                document.getElementById("st6-" + i).style.color = "rgba(0,0,0,0)";
+            for (let q = 1; q <= 6; q++) {
+                if (scales[actualScale].includes(document.getElementById("st" + q + "-" + i).innerHTML)) {
+                    document.getElementById("st" + q + "-" + i).style.backgroundColor = "green";
+                    document.getElementById("st" + q + "-" + i).style.color = "white";
+                } else {
+                    document.getElementById("st" + q + "-" + i).style.backgroundColor = "rgba(0,0,0,0)";
+                    document.getElementById("st" + q + "-" + i).style.color = "rgba(0,0,0,0)";
+                }
             }
         }
         for(let i = 1; i => 6; i++) {
