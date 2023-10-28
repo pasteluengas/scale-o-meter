@@ -148,7 +148,8 @@ function selectScale() {
                 document.getElementById("st" + i).style.backgroundColor = "green";
                 document.getElementById("st" + i).style.color = "white";
             } else {
-                document.getElementById("st" + i).style.backgroundColor = "grey";
+                document.getElementById("st" + i + "-0").style.backgroundColor = "rgba(256, 256, 256, 0.5)";;
+                document.getElementById("st" + i).style.backgroundColor = "rgba(147, 147, 147, 0.5)";
                 document.getElementById("st" + i).style.color = "black";
             }
         }
