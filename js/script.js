@@ -89,6 +89,10 @@ function selectScale() {
             document.getElementById("st5-" + i).style.color = "white";
             document.getElementById("st6-" + i).style.color = "white";
         }
+        for(let i = 1; i => 6; i++) {
+            document.getElementById("st" + i).style.backgroundColor = "green";
+            document.getElementById("st" + i).style.color = "white";
+        }
     } else {
         for (let i = 1; i < 13; i++) {
             if (scales[actualScale].includes(document.getElementById("st1-" + i).innerHTML)) {
@@ -137,6 +141,15 @@ function selectScale() {
             } else {
                 document.getElementById("st6-" + i).style.backgroundColor = "rgba(0,0,0,0)";
                 document.getElementById("st6-" + i).style.color = "rgba(0,0,0,0)";
+            }
+        }
+        for(let i = 1; i => 6; i++) {
+            if (scales[actualScale].includes(document.getElementById("st" + i).value)){
+                document.getElementById("st" + i).style.backgroundColor = "green";
+                document.getElementById("st" + i).style.color = "white";
+            } else {
+                document.getElementById("st" + i).style.backgroundColor = "grey";
+                document.getElementById("st" + i).style.color = "black";
             }
         }
     }
