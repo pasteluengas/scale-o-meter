@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Scale-o-Meter v0.1</title>
+    <link rel="icon" href="files/icon.png">
+    <title>Scale-o-Meter v1.0</title>
 </head>
 <body>
     <h1>Scale-o-meter</h1>
@@ -200,18 +202,80 @@
                     <h2>Select a scale</h2>
                     <select name="scale_selected" id="scale_selected">
                         <option value="all_notes" selected>Show all notes</option>
-                        <option value="c_major">C major</option>
-                        <option value="c_minor">C minor</option>
+                        <optgroup>
+                            <option value="c_major">C Major</option>
+                            <option value="cs_major">C# Major</option>
+                            <option value="d_major">D Major</option>
+                            <option value="ds_major">D# Major</option>
+                            <option value="e_major">E Major</option>
+                            <option value="f_major">F Major</option>
+                            <option value="fs_major">F# Major</option>
+                            <option value="g_major">G Major</option>
+                            <option value="gs_major">G# Major</option>
+                            <option value="a_major">A Major</option>
+                            <option value="as_major">A# Major</option>
+                            <option value="b_major">B Major</option>
+                        </optgroup>
+                        <optgroup>
+                            <option value="c_minor">C Minor</option>
+                            <option value="csharp_minor">C# Minor</option>
+                            <option value="d_minor">D Minor</option>
+                            <option value="dsharp_minor">D# Minor</option>
+                            <option value="e_minor">E Minor</option>
+                            <option value="f_minor">F Minor</option>
+                            <option value="fsharp_minor">F# Minor</option>
+                            <option value="g_minor">G Minor</option>
+                            <option value="gsharp_minor">G# Minor</option>
+                            <option value="a_minor">A Minor</option>
+                            <option value="asharp_minor">A# Minor</option>
+                            <option value="b_minor">B Minor</option>
+                        </optgroup>
                     </select>
                     <input type="button" value="Select" onclick="selectScale();">
             </form>
         </div>
     </div>
-    <small>v0.1 | By PasteLuengas</small>
+    <small>v1.0 | By PasteLuengas</small>
     <script src="js/script.js"></script>
 
     <!-- INFO ABOUT THE WEB APP-->
     
-
+    <div class="information">
+        <h2>How to use Scale-o-meter?</h2>
+        <div class="steps">
+            <div class="step left">
+                <div class="stepimage">
+                    <img src="images/tunings.png" alt="Tune your guitar">
+                </div>
+                <div class="steptext">
+                    <span class="stepnumber">1.</span>
+                    <span class="steptitle"><b>Tune</b> <br> the guitar.</span>
+                    <p class="stepsubtitle">Using the note-selection <br> options.</p>
+                </div>
+            </div>
+            <!-- ----- -->
+            <div class="step right">
+                <div class="steptext">
+                    <span class="stepnumber">2.</span>
+                    <span class="steptitle"><b>Select</b> <br> the scale.</span>
+                    <p class="stepsubtitle">Using the scale-selection <br> options.</p>
+                </div>
+                <div class="stepimage">
+                    <img src="images/scales.png" alt="Tune your guitar">
+                </div>
+            </div>
+            <!-- --- -->
+            <div class="step left">
+                <div class="stepimage">
+                    <img src="images/save.png" alt="Tune your guitar">
+                </div>
+                <div class="steptext">
+                    <span class="stepnumber">3.</span>
+                    <span class="steptitle"><b>Press</b> <br> the button</span>
+                    <p class="stepsubtitle">And start learning.</p>
+                </div>
+            </div>
+        </div>
+        </div>
 </body>
 </html>

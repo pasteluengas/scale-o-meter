@@ -26,6 +26,28 @@ const codeNotes = {
 const scales = {
     c_major: ["C", "D", "E", "F", "G", "A", "B"],
     c_minor: ["C", "D", "D#", "F", "G", "G#", "A#"],
+    cs_major: ["C#", "D#", "F", "F#", "G#", "A#", "C"],
+    csharp_minor: ["C#", "D#", "E", "F#", "G#", "A", "B"],
+    d_major: ["D", "E", "F#", "G", "A", "B", "C#"],
+    d_minor: ["D", "E", "F", "G", "A", "A#", "C"],
+    ds_major: ["D#", "F", "G", "G#", "A#", "C", "D"],
+    dsharp_minor: ["D#", "F", "F#", "G#", "A#", "B", "C#"],
+    e_major: ["E", "F#", "G#", "A", "B", "C#", "D#"],
+    e_minor: ["E", "F#", "G", "A", "B", "C", "D"],
+    f_major: ["F", "G", "A", "A#", "C", "D", "E"],
+    f_minor: ["F", "G", "G#", "A#", "C", "C#", "D#"],
+    fs_major: ["F#", "G#", "A#", "B", "C#", "D#", "F"],
+    fsharp_minor: ["F#", "G#", "A", "B", "C#", "D", "E"],
+    g_major: ["G", "A", "B", "C", "D", "E", "F#"],
+    g_minor: ["G", "A", "A#", "C", "D", "D#", "F"],
+    gs_major: ["G#", "A#", "C", "C#", "D#", "F", "G"],
+    gsharp_minor: ["G#", "A#", "B", "C#", "D#", "E", "F#"],
+    a_major: ["A", "B", "C#", "D", "E", "F#", "G#"],
+    a_minor: ["A", "B", "C", "D", "E", "F", "G"],
+    as_major: ["A#", "C", "D", "D#", "F", "G", "A"],
+    asharp_minor: ["A#", "C", "C#", "D#", "F", "F#", "G#"],
+    b_major: ["B", "C#", "D#", "E", "F#", "G#", "A#"],
+    b_minor: ["B", "C#", "D", "E", "F#", "G", "A"],
 }
 
 function selectScale() {
@@ -77,19 +99,11 @@ function selectScale() {
         for (let i = 1; i < 13; i++) {
             //document.getElementById("st1-" + i).style.backgroundColor = "rgba(0,0,0,0.5)";
 
+            for(let u = 1; u <= 6; u++) {
+                document.getElementById("st" + u + "-" + i).style.backgroundColor = "green";
+                document.getElementById("st" + u + "-" + i).style.color = "white";
+            }
             
-            document.getElementById("st1-" + i).style.backgroundColor = "green";
-            document.getElementById("st2-" + i).style.backgroundColor = "green";
-            document.getElementById("st3-" + i).style.backgroundColor = "green";
-            document.getElementById("st4-" + i).style.backgroundColor = "green";
-            document.getElementById("st5-" + i).style.backgroundColor = "green";
-            document.getElementById("st6-" + i).style.backgroundColor = "green";
-            document.getElementById("st1-" + i).style.color = "white";
-            document.getElementById("st2-" + i).style.color = "white";
-            document.getElementById("st3-" + i).style.color = "white";
-            document.getElementById("st4-" + i).style.color = "white";
-            document.getElementById("st5-" + i).style.color = "white";
-            document.getElementById("st6-" + i).style.color = "white";
         }
         for(let i = 1; i => 6; i++) {
             document.getElementById("st" + i).style.backgroundColor = "green";

@@ -165,3 +165,42 @@ body {
     border-radius: 20px;
     height: 20px;
 }
+
+.information {
+    margin: 180px;
+    margin-top: 0px;
+}
+
+
+.step {
+    display: flex;
+}
+
+.right {
+    justify-content: right; 
+}
+
+.left {
+    justify-content: left; 
+}
+
+.stepimage img {
+    border-radius: 20px;
+
+}
+
+.steptext {
+    margin: 10px;
+}
+
+.stepnumber {
+    font-family: 'Londrina Outline', sans-serif;
+    color: white;
+    font-size: 100px;
+    padding: 0px;
+}
+
+.steptitle {
+    font-size: 40px;
+}
+
