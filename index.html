@@ -200,9 +200,9 @@
             <form action="post">
                 <label for="scale_selected"></label>
                     <h2>Select a scale</h2>
-                    <select name="scale_selected" id="scale_selected">
+                    <select name="scale_selected" id="scale_selected" onchange="selectScale()">
                         <option value="all_notes" selected>Show all notes</option>
-                        <optgroup>
+                        <optgroup label="Major Scales">
                             <option value="c_major">C Major</option>
                             <option value="cs_major">C# Major</option>
                             <option value="d_major">D Major</option>
@@ -216,7 +216,7 @@
                             <option value="as_major">A# Major</option>
                             <option value="b_major">B Major</option>
                         </optgroup>
-                        <optgroup>
+                        <optgroup label="Minor Scales">
                             <option value="c_minor">C Minor</option>
                             <option value="csharp_minor">C# Minor</option>
                             <option value="d_minor">D Minor</option>
@@ -230,6 +230,34 @@
                             <option value="asharp_minor">A# Minor</option>
                             <option value="b_minor">B Minor</option>
                         </optgroup>
+                        <optgroup label="Pentatonic Major Scales">
+                            <option value="c_major_pentatonic">C Major Pentatonic</option>
+                            <option value="cs_major_pentatonic">C# Major Pentatonic</option>
+                            <option value="d_major_pentatonic">D Major Pentatonic</option>
+                            <option value="ds_major_pentatonic">D# Major Pentatonic</option>
+                            <option value="e_major_pentatonic">E Major Pentatonic</option>
+                            <option value="f_major_pentatonic">F Major Pentatonic</option>
+                            <option value="fs_major_pentatonic">F# Major Pentatonic</option>
+                            <option value="g_major_pentatonic">G Major Pentatonic</option>
+                            <option value="gs_major_pentatonic">G# Major Pentatonic</option>
+                            <option value="a_major_pentatonic">A Major Pentatonic</option>
+                            <option value="as_major_pentatonic">A# Major Pentatonic</option>
+                            <option value="b_major_pentatonic">B Major Pentatonic</option>
+                        </optgroup>
+                        <optgroup label="Pentatonic Minor Scales">
+                            <option value="c_minor_pentatonic">C Minor Pentatonic</option>
+                            <option value="csharp_minor_pentatonic">C# Minor Pentatonic</option>
+                            <option value="d_minor_pentatonic">D Minor Pentatonic</option>
+                            <option value="dsharp_minor_pentatonic">D# Minor Pentatonic</option>
+                            <option value="e_minor_pentatonic">E Minor Pentatonic</option>
+                            <option value="f_minor_pentatonic">F Minor Pentatonic</option>
+                            <option value="fsharp_minor_pentatonic">F# Minor Pentatonic</option>
+                            <option value="g_minor_pentatonic">G Minor Pentatonic</option>
+                            <option value="gsharp_minor_pentatonic">G# Minor Pentatonic</option>
+                            <option value="a_minor_pentatonic">A Minor Pentatonic</option>
+                            <option value="asharp_minor_pentatonic">A# Minor Pentatonic</option>
+                            <option value="b_minor_pentatonic">B Minor Pentatonic</option>
+                          </optgroup>
                     </select>
                     <input type="button" value="Select" onclick="selectScale();">
             </form>
