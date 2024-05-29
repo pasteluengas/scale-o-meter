@@ -1,3 +1,5 @@
+let listOf = document.getElementById("notesOlList");
+
 let st1 = ["E"];
 let st2 = ["B"];
 let st3 = ["G"];
@@ -24,6 +26,7 @@ const codeNotes = {
 
 //SCALES
 const scales = {
+    all_notes: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"],
     c_major: ["C", "D", "E", "F", "G", "A", "B"],
     c_minor: ["C", "D", "D#", "F", "G", "G#", "A#"],
     cs_major: ["C#", "D#", "F", "F#", "G#", "A#", "C"],
@@ -70,6 +73,16 @@ const scales = {
 }
 
 function selectScale() {
+    // the actual scale
+    let currentScale = document.getElementById("scale_selected").value;
+    // listing the scale
+    listOf.innerHTML = "";
+    for (let i = 0; i < scales[currentScale].length; i++) {
+        listOf.innerHTML += "<li>" + scales[currentScale][i] + "</li>";
+    }
+    document.getElementById("notesOf").innerHTML = "Notes of the " + currentScale.replace("_", " ").replace("sharp", "#").replace("s", "#").replace("major", "").toUpperCase().replace(" MINOR", "m").replace("ALL NOTE#", "all notes") + " scale:";
+
+
     // Changing the tuning
     st1.splice(0);
     st2.splice(0);
@@ -113,8 +126,7 @@ function selectScale() {
     }
 
     // Showing/Hidding notes depending by scale
-    let actualScale = document.getElementById("scale_selected").value;
-    if (actualScale == "all_notes") {
+    if (currentScale == "all_notes") {
         for (let i = 1; i < 13; i++) {
             //document.getElementById("st1-" + i).style.backgroundColor = "rgba(0,0,0,0.5)";
 
@@ -128,10 +140,11 @@ function selectScale() {
             document.getElementById("st" + i).style.backgroundColor = "green";
             document.getElementById("st" + i).style.color = "white";
         }
+
     } else {
         for (let i = 1; i < 13; i++) {
             for (let q = 1; q <= 6; q++) {
-                if (scales[actualScale].includes(document.getElementById("st" + q + "-" + i).innerHTML)) {
+                if (scales[currentScale].includes(document.getElementById("st" + q + "-" + i).innerHTML)) {
                     document.getElementById("st" + q + "-" + i).style.backgroundColor = "green";
                     document.getElementById("st" + q + "-" + i).style.color = "white";
                 } else {
@@ -141,7 +154,7 @@ function selectScale() {
             }
         }
         for(let i = 1; i => 6; i++) {
-            if (scales[actualScale].includes(document.getElementById("st" + i).value)){
+            if (scales[currentScale].includes(document.getElementById("st" + i).value)){
                 document.getElementById("st" + i).style.backgroundColor = "green";
                 document.getElementById("st" + i).style.color = "white";
             } else {

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="files/icon.png">
-    <title>Scale-o-Meter v1.0</title>
+    <title>Scale-o-Meter v1.3.0</title>
 </head>
 <body>
     <h1>Scale-o-meter</h1>
@@ -17,7 +17,7 @@
         <div class="neck">
             <div class="st1">
                 <div class="fret" id="st1-0">
-                    <select id="st1">
+                    <select id="st1" onchange="selectScale()">
                         <option value="C">C</option>
                         <option value="C#">C#</option>
                         <option value="D">D</option>
@@ -47,7 +47,7 @@
             </div>
             <div class="st2">
                 <div class="fret" id="st2-0">
-                    <select id="st2">
+                    <select id="st2" onchange="selectScale()">
                         <option value="C">C</option>
                         <option value="C#">C#</option>
                         <option value="D">D</option>
@@ -77,7 +77,7 @@
             </div>
             <div class="st3">
                 <div class="fret" id="st3-0">
-                    <select id="st3">
+                    <select id="st3" onchange="selectScale()">
                         <option value="C">C</option>
                         <option value="C#">C#</option>
                         <option value="D" selected>D</option>
@@ -105,7 +105,7 @@
                 <div class="fret" id="st3-11">F#</div>
                 <div class="fret" id="st3-12">G</div>
             </div>
-            <div class="st4">
+            <div class="st4" onchange="selectScale()">
                 <div class="fret" id="st4-0">
                     <select id="st4">
                         <option value="C">C</option>
@@ -135,7 +135,7 @@
                 <div class="fret" id="st4-11">C#</div>
                 <div class="fret" id="st4-12">D</div>
             </div>
-            <div class="st5">
+            <div class="st5" onchange="selectScale()">
                 <div class="fret" id="st5-0">
                     <select id="st5">
                         <option value="C">C</option>
@@ -165,7 +165,7 @@
                 <div class="fret" id="st5-11">G#</div>
                 <div class="fret" id="st5-12">A</div>
             </div>
-            <div class="st6">
+            <div class="st6" onchange="selectScale()">
                 <div class="fret" id="st6-0">
                     <select id="st6">
                         <option value="C">C</option>
@@ -259,51 +259,28 @@
                             <option value="b_minor_pentatonic">B Minor Pentatonic</option>
                           </optgroup>
                     </select>
-                    <input type="button" value="Select" onclick="selectScale();">
             </form>
+            <h3 id="notesOf">Notes of the all notes scale:</h3>
+            <ol type="I" id="notesOlList">
+                <li>C</li>
+                <li>C#</li>
+                <li>D</li>
+                <li>D#</li>
+                <li>E</li>
+                <li>F</li>
+                <li>F#</li>
+                <li>G</li>
+                <li>G#</li>
+                <li>A</li>
+                <li>A#</li>
+                <li>B</li>
+            </ol>
         </div>
     </div>
-    <small>v1.0 | By PasteLuengas</small>
+    <small>v1.3.0 | By PasteLuengas</small>
     <script src="js/script.js"></script>
 
     <!-- INFO ABOUT THE WEB APP-->
-    
-    <div class="information">
-        <h2>How to use Scale-o-meter?</h2>
-        <div class="steps">
-            <div class="step left">
-                <div class="stepimage">
-                    <img src="images/tunings.png" alt="Tune your guitar">
-                </div>
-                <div class="steptext">
-                    <span class="stepnumber">1.</span>
-                    <span class="steptitle"><b>Tune</b> <br> the guitar.</span>
-                    <p class="stepsubtitle">Using the note-selection <br> options.</p>
-                </div>
-            </div>
-            <!-- ----- -->
-            <div class="step right">
-                <div class="steptext">
-                    <span class="stepnumber">2.</span>
-                    <span class="steptitle"><b>Select</b> <br> the scale.</span>
-                    <p class="stepsubtitle">Using the scale-selection <br> options.</p>
-                </div>
-                <div class="stepimage">
-                    <img src="images/scales.png" alt="Tune your guitar">
-                </div>
-            </div>
-            <!-- --- -->
-            <div class="step left">
-                <div class="stepimage">
-                    <img src="images/save.png" alt="Tune your guitar">
-                </div>
-                <div class="steptext">
-                    <span class="stepnumber">3.</span>
-                    <span class="steptitle"><b>Press</b> <br> the button</span>
-                    <p class="stepsubtitle">And start learning.</p>
-                </div>
-            </div>
-        </div>
-        </div>
+
 </body>
 </html>
