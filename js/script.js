@@ -25,51 +25,68 @@ const codeNotes = {
 };
 
 //SCALES
+//SCALES
+//SCALES
+//SCALES
+//SCALES
 const scales = {
-    all_notes: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"],
+    // major scales
     c_major: ["C", "D", "E", "F", "G", "A", "B"],
-    c_minor: ["C", "D", "D#", "F", "G", "G#", "A#"],
-    cs_major: ["C#", "D#", "F", "F#", "G#", "A#", "C"],
-    csharp_minor: ["C#", "D#", "E", "F#", "G#", "A", "B"],
+    cs_major: ["C#", "D#", "F", "F#", "G#", "A#"],
     d_major: ["D", "E", "F#", "G", "A", "B", "C#"],
-    d_minor: ["D", "E", "F", "G", "A", "A#", "C"],
-    ds_major: ["D#", "F", "G", "G#", "A#", "C", "D"],
-    dsharp_minor: ["D#", "F", "F#", "G#", "A#", "B", "C#"],
+    ds_major: ["D#", "F", "G#", "A#", "C"],
     e_major: ["E", "F#", "G#", "A", "B", "C#", "D#"],
-    e_minor: ["E", "F#", "G", "A", "B", "C", "D"],
     f_major: ["F", "G", "A", "A#", "C", "D", "E"],
-    f_minor: ["F", "G", "G#", "A#", "C", "C#", "D#"],
     fs_major: ["F#", "G#", "A#", "B", "C#", "D#", "F"],
-    fsharp_minor: ["F#", "G#", "A", "B", "C#", "D", "E"],
     g_major: ["G", "A", "B", "C", "D", "E", "F#"],
-    g_minor: ["G", "A", "A#", "C", "D", "D#", "F"],
-    gs_major: ["G#", "A#", "C", "C#", "D#", "F", "G"],
-    gsharp_minor: ["G#", "A#", "B", "C#", "D#", "E", "F#"],
+    gs_major: ["G#", "A#", "C", "C#", "D#", "F"],
     a_major: ["A", "B", "C#", "D", "E", "F#", "G#"],
-    a_minor: ["A", "B", "C", "D", "E", "F", "G"],
-    as_major: ["A#", "C", "D", "D#", "F", "G", "A"],
-    asharp_minor: ["A#", "C", "C#", "D#", "F", "F#", "G#"],
+    as_major: ["A#", "C", "D#", "F", "G"],
     b_major: ["B", "C#", "D#", "E", "F#", "G#", "A#"],
+
+    //minor
+    c_minor: ["C", "D", "D#", "F", "G", "G#", "A#"],
+    cs_minor: ["C#", "D#", "E", "F#", "G#", "A", "B"],
+    d_minor: ["D", "E", "F", "G", "A", "A#", "C"],
+    ds_minor: ["D#", "F", "F#", "G#", "A#", "B", "C#"],
+    e_minor: ["E", "F#", "G", "A", "B", "C", "D"],
+    f_minor: ["F", "G", "G#", "A#", "C", "C#", "D#"],
+    fs_minor: ["F#", "G#", "A", "B", "C#", "D", "E"],
+    g_minor: ["G", "A", "A#", "C", "D", "D#", "F"],
+    gs_minor: ["G#", "A#", "B", "C#", "D#", "E", "F#"],
+    a_minor: ["A", "B", "C", "D", "E", "F", "G"],
+    as_minor: ["A#", "C", "C#", "D#", "F", "F#", "G#"],
     b_minor: ["B", "C#", "D", "E", "F#", "G", "A"],
+
+    // pentatonic major
     c_major_pentatonic: ["C", "D", "E", "G", "A"],
-    c_minor_pentatonic: ["C", "D#", "F", "G", "A#"],
     cs_major_pentatonic: ["C#", "D#", "F#", "G#", "A#"],
     d_major_pentatonic: ["D", "E", "F#", "A", "B"],
-    d_minor_pentatonic: ["D", "F", "G", "A", "C"],
     ds_major_pentatonic: ["D#", "F", "G#", "A#", "C#"],
     e_major_pentatonic: ["E", "F#", "G#", "B", "C#"],
-    e_minor_pentatonic: ["E", "G", "A", "B", "D"],
     f_major_pentatonic: ["F", "G", "A", "C", "D"],
-    f_minor_pentatonic: ["F", "G#", "A#", "C", "D#"],
     fs_major_pentatonic: ["F#", "G#", "A#", "C#", "D#"],
     g_major_pentatonic: ["G", "A", "B", "D", "E"],
-    g_minor_pentatonic: ["G", "A#", "C", "D", "F"],
     gs_major_pentatonic: ["G#", "A#", "C#", "D#", "F#"],
     a_major_pentatonic: ["A", "B", "C#", "E", "F#"],
-    a_minor_pentatonic: ["A", "C", "D", "E", "G"],
     as_major_pentatonic: ["A#", "C", "D#", "F", "G"],
     b_major_pentatonic: ["B", "C#", "D#", "F#", "G#"],
+
+    // pentatonic minor
+    c_minor_pentatonic: ["C", "D#", "F", "G", "A#"],
+    cs_minor_pentatonic: ["C#", "E", "F#", "G#", "B"],
+    d_minor_pentatonic: ["D", "F", "G", "A", "C"],
+    ds_minor_pentatonic: ["D#", "F#", "G#", "A#", "C#"],
+    e_minor_pentatonic: ["E", "G", "A", "B", "D"],
+    f_minor_pentatonic: ["F", "G#", "A#", "C", "D#"],
+    fs_minor_pentatonic: ["F#", "A", "B", "C#", "E"],
+    g_minor_pentatonic: ["G", "A#", "C", "D", "F"],
+    gs_minor_pentatonic: ["G#", "B", "C#", "D#", "F#"],
+    a_minor_pentatonic: ["A", "C", "D", "E", "G"],
+    as_minor_pentatonic: ["A#", "C#", "D#", "E#", "G#"],
     b_minor_pentatonic: ["B", "D", "E", "F#", "A"],
+
+    all_notes: ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"],
 }
 
 function selectScale() {
@@ -80,7 +97,7 @@ function selectScale() {
     for (let i = 0; i < scales[currentScale].length; i++) {
         listOf.innerHTML += "<li>" + scales[currentScale][i] + "</li>";
     }
-    document.getElementById("notesOf").innerHTML = "Notes of the " + currentScale.replace("_", " ").replace("sharp", "#").replace("s", "#").replace("major", "").toUpperCase().replace(" MINOR", "m").replace("ALL NOTE#", "all notes") + " scale:";
+    document.getElementById("notesOf").innerHTML = "Notes of the " + currentScale.replace("_", " ").replace("s", "#").replace("s", "#").replace("major", "").toUpperCase().replace(" MINOR", "m").replace("ALL NOTE#", "all notes") + " scale:";
 
 
     // Changing the tuning

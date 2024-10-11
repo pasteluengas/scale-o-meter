@@ -14,9 +14,16 @@
 <body>
     <h1>Scale-o-meter</h1>
     <div class="container">
+        <!--
+         
+
+
+        -->
         <div class="neck">
+            <!-- string 1 -->
             <div class="st1">
                 <div class="fret" id="st1-0">
+                    <!-- string note selection (default = standard) also fret 0-->
                     <select id="st1" onchange="selectScale()">
                         <option value="C">C</option>
                         <option value="C#">C#</option>
@@ -32,6 +39,7 @@
                         <option value="B">B</option>
                     </select>
                 </div>
+                <!-- class="st[string]-[fret]" -->
                 <div class="fret" id="st1-1">F</div>
                 <div class="fret" id="st1-2">F#</div>
                 <div class="fret" id="st1-3">G</div>
@@ -45,6 +53,7 @@
                 <div class="fret" id="st1-11">D#</div>
                 <div class="fret" id="st1-12">E</div>
             </div>
+            <!-- string 2 -->
             <div class="st2">
                 <div class="fret" id="st2-0">
                     <select id="st2" onchange="selectScale()">
@@ -75,6 +84,7 @@
                 <div class="fret" id="st2-11">A#</div>
                 <div class="fret" id="st2-12">B</div>
             </div>
+            <!-- string 3 -->
             <div class="st3">
                 <div class="fret" id="st3-0">
                     <select id="st3" onchange="selectScale()">
@@ -105,6 +115,7 @@
                 <div class="fret" id="st3-11">F#</div>
                 <div class="fret" id="st3-12">G</div>
             </div>
+            <!-- string 4 -->
             <div class="st4" onchange="selectScale()">
                 <div class="fret" id="st4-0">
                     <select id="st4">
@@ -165,6 +176,7 @@
                 <div class="fret" id="st5-11">G#</div>
                 <div class="fret" id="st5-12">A</div>
             </div>
+            <!-- string 6 -->
             <div class="st6" onchange="selectScale()">
                 <div class="fret" id="st6-0">
                     <select id="st6">
@@ -196,6 +208,7 @@
                 <div class="fret" id="st6-12">E</div>
             </div>
         </div>
+        <!-- right menu -->
         <div class="menu">
             <form action="post">
                 <label for="scale_selected"></label>
@@ -218,16 +231,16 @@
                         </optgroup>
                         <optgroup label="Minor Scales">
                             <option value="c_minor">C Minor</option>
-                            <option value="csharp_minor">C# Minor</option>
+                            <option value="cs_minor">C# Minor</option>
                             <option value="d_minor">D Minor</option>
-                            <option value="dsharp_minor">D# Minor</option>
+                            <option value="ds_minor">D# Minor</option>
                             <option value="e_minor">E Minor</option>
                             <option value="f_minor">F Minor</option>
-                            <option value="fsharp_minor">F# Minor</option>
+                            <option value="fs_minor">F# Minor</option>
                             <option value="g_minor">G Minor</option>
-                            <option value="gsharp_minor">G# Minor</option>
+                            <option value="gs_minor">G# Minor</option>
                             <option value="a_minor">A Minor</option>
-                            <option value="asharp_minor">A# Minor</option>
+                            <option value="as_minor">A# Minor</option>
                             <option value="b_minor">B Minor</option>
                         </optgroup>
                         <optgroup label="Pentatonic Major Scales">
@@ -246,16 +259,16 @@
                         </optgroup>
                         <optgroup label="Pentatonic Minor Scales">
                             <option value="c_minor_pentatonic">C Minor Pentatonic</option>
-                            <option value="csharp_minor_pentatonic">C# Minor Pentatonic</option>
+                            <option value="cs_minor_pentatonic">C# Minor Pentatonic</option>
                             <option value="d_minor_pentatonic">D Minor Pentatonic</option>
-                            <option value="dsharp_minor_pentatonic">D# Minor Pentatonic</option>
+                            <option value="ds_minor_pentatonic">D# Minor Pentatonic</option>
                             <option value="e_minor_pentatonic">E Minor Pentatonic</option>
                             <option value="f_minor_pentatonic">F Minor Pentatonic</option>
-                            <option value="fsharp_minor_pentatonic">F# Minor Pentatonic</option>
+                            <option value="fs_minor_pentatonic">F# Minor Pentatonic</option>
                             <option value="g_minor_pentatonic">G Minor Pentatonic</option>
-                            <option value="gsharp_minor_pentatonic">G# Minor Pentatonic</option>
+                            <option value="gs_minor_pentatonic">G# Minor Pentatonic</option>
                             <option value="a_minor_pentatonic">A Minor Pentatonic</option>
-                            <option value="asharp_minor_pentatonic">A# Minor Pentatonic</option>
+                            <option value="as_minor_pentatonic">A# Minor Pentatonic</option>
                             <option value="b_minor_pentatonic">B Minor Pentatonic</option>
                           </optgroup>
                     </select>
@@ -277,7 +290,7 @@
             </ol>
         </div>
     </div>
-    <small>v1.3.0 | By PasteLuengas</small>
+    <small>v1.3.1 | By Paste -- Suggest scales or report bugs via Discord: @pasteluengas</small>
     <script src="js/script.js"></script>
 
     <!-- INFO ABOUT THE WEB APP-->
